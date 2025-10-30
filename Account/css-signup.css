@@ -1,0 +1,150 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://images.pexels.com/photos/4861352/pexels-photo-4861352.jpeg);
+    /* nền chung */
+    color: #2C3E50;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Header + Nav */
+
+header {
+    display: flex;
+    background-color: #2C7BE5;
+    /* xanh primary */
+    color: white;
+    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* chú ý */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC107;
+    /* accent vàng */
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-size: 33px;
+    color: #114570;
+}
+
+.dangky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 48vh;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 110px;
+    margin-bottom: 110px;
+    background: linear-gradient(to bottom, rgb(221, 224, 227), #5599c1);
+}
+
+.dangky a {
+    color: rgb(5, 6, 6);
+    text-decoration: none;
+    background-color: #2c91de;
+    border-radius: 4px;
+}
+
+tr {
+    padding: 10px;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgb(71, 71, 224), #5790d5);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    clear: both;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#email img {
+    width: 12px;
+    height: 12px;
+}
+
+#email a {
+    color: aqua;
+}
+
+#number-phone img {
+    width: 12px;
+    height: 12px;
+}
+
+#number-phone a {
+    color: aqua;
+}
+
+#facebook img {
+    width: 12px;
+    height: 12px;
+}
+
+#facebook a {
+    color: aqua;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .intro {
+        flex-direction: column;
+    }
+    .intro-text {
+        padding: 20px;
+    }
+}

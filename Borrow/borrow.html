@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" href="css-borrow.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <h1>📚 Library Management</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="/Discover/discover.html">Khám phá</a></li>
+                <li><a href="/Borrow/borrow.html">Mượn / Trả</a></li>
+                <li><a href="/member/members.html">Thành viên</a></li>
+                <li><a href="/addBook/bosungsach.html">Bổ sung sách</a></li>
+                <li><a href="/Contact/lienHe.html">Liên hệ</a></li>
+                <li><a href="/Account/login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Mượn/Trả</h2>
+    </div>
+
+    <div class="container">
+        <h2>Toán Học</h2>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <img title="giai tích 2" src="https://images.nxbbachkhoa.vn/Picture/2023/3/20/image-20230320163952673.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div title="giai tích 1" class="card">
+                <img src="https://images.nxbbachkhoa.vn/Picture/2022/9/20/image-20220920111556313.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="giai tich 3" src="https://images.nxbbachkhoa.vn/Picture/2022/6/1/image-20220601151312549.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="vật lý điện tử - quyển 1" src="https://images.nxbbachkhoa.vn/Picture/2023/6/8/image-2023060817513959.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="vật lý đời sống" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAMEBQYBB//EADwQAAEDAwMBBgQEBQALAAAAAAEAAgMEBRESITFBBhMiUWFxFDKBkSNCUqEHFTNywSZDU2JzgqKxsrPR/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAHhEAAwEAAwEAAwAAAAAAAAAAAAECEQMSITFBUYH/2gAMAwEAAhEDEQA/APSY5vUbJ3vxnGd1WTughe498NWdmtOVF+MBznUHdFJqaAydc/RSqMtnY9rjjqB5LMR3BzSGvKmw1fUO+yFTQnKZbuGHkdAuKHHUjVjOcqWDkLpm1RjUtBg6hg9OEh1XByjCZIK5jPPCPCFxTQAkoV0rioDichG7nn8oTZ4Ts3gYIvqUmAy/ckoUQIHKFUIS4kkmA5F8v1SSiHh+qSQzPOpmCKZkjSypjGQBw4Kte55IHGeq0kQZVxtDnfisPgcenp7KnulMaeQFgyxwON/lPULhZ1EancA7Q75fJWTLfUPYJKT8UfpzghZq91lXS2n4qjLI3tkDXudE1+xyByD1x9124dp6yisMFTQSiGepc1zXd21wa3Tl4AII2d4fotJ4XSTX5JdF/T1E0NSWzsLcbYdytHAdcWoA8/sqOSokh7N/zG8uD6umhD3vDWt1SY+XA2+bb6LH9ju01W+9RQV72d1MwtaGQMj8Q3G7QM8HlXPDXtIl0mj1EBG0brHdta/tHQOFXZ5WRW+KAGZ2mJx1lx3w4F3UcJnsTdO01yqI6q4TMmtsjSAQyJp1B2OGgO6O+y0U7PYzaw3D0044WU/iHe7lZpLc23VAhErna8xNfqxp8wfNaRvez0R0y93M+M6ZNIOk7jOCMIzEmGBlxOTjjlcLyBwvMpu1Vxpm3CkvQZNcad2mne6CPSx2cHI0448Q8/stf2TkulXbY57nP3j5Brb+E1mGngbAdN9/NaOXPrFhfQyHOsgaW779UzJUOc4kt5RTYa0MHA59VGcklvpLDNQf0j7oTUkflH3TRQlXhOj3xTv0j7rnxbv0t+6YKA8p4gLCCqcWHwjnzXVGpvkPukk0h6VVok77Ie5w8ip95hxTxyOfq3xnz9VGda3xyE07wGE5wTgp25sqnQsYAHQtYTkHgrh6tfUdXZFNU0/xlhq6YY1SgtZn9Q8Tf+oNWJsoluNdbKCTxQQyFzW44bnW/P2P7raskcynk3wGSA58tlMslNRvlEzKalEvV8cEbHb+oaDha8XN0lrAuSs/iRWujoaK0wk95K4SyNG5IGzRj+4k/QLK3KerZFbpmW2WifRMaxsz2OAe4HIJyPPJ+q9bmtlHVVDKiajgfUNADZXQtLxjjDsZCCOlo6mWenqZYqmN7tXw00bDoAIwA0t4B6nO55W88iSSwxKa/wBfHW9g6qSIENkhY5oJ3A1Db6cfRSf4Yj/RiH+6T/2yK+baaJtK6jNHB8O4Y7ruWhvP6cY/ZP0VHTUMQhooI4Yh+SNgY0b54AA5Kx7Lp1X7Kb0wP8XMNktLjnAMh2/5Vc9ne19tukzKClgrO+bGXFz4mBoGQOQ4nkjotFX2yjuIb8bSQVHd5097C1+nPlkHCYprTbaKTvKWip4H43MULGZ98AZCrunGMR592+pID2yt2Y2n4juxNn/WDXjf6bLfOdHQ0JnLS8Nbkgc79Seg9egUXNsu1UyWSibJLHju5ZqdmoAZOWkjOM9Rtkp+4MFTSugDtI25GQcEbEdRtuFXZtJCBpqgVbHPDC3ScE5yD7HqPsk8N6qvpaV1NM95fkYa1jAMNjAz8ozsDnjJ4HQYEh79+fdVKZLDc4cAJpzsLrNQOtzHFvnjZKVzZHeDb3VkjZOUKRBCElUSSqb5D7pIKd2GHbqkpZRJJTVUXfCzEHcMP/ZOah6LjnNc0tdghwwVDWopPGYO+VklPZZiyofFNJUsDTG8tc4AHO46bhV9NcbrZaaiuvx7qylqCQ+F73O0uHzNOrg+oVt2roJY7VJEyIzP79j4zG0uODkHj6ZVRT0N2vNPQ26ShfSUVPy8xFhcTsXeL5ne31T4JSjGbXWs0na/tFWS1FHaLNI6KWqja90zTg+LgA/lGASeqrqrszfbJRG70t2me+Id5IBqBx1O5Oob8EKV2qslayaiu9ojdJNTMDXwtGogAkggfmG+CBuolx7WXq90L7XSWhzJJB3cz26nZHUbgBg9SThVO4uv9MwJ69x/h9FJSyTQT/G4ldHIWlziXFxyMck5PuvQeycr5Oz9G6RzpHGJpJc7JJwOpWEu1jnt/YiKnYySaY1DXuETC7cg5O3TgfRbXsoHMsVJG9pa4RNBa4YI2CjkSzz9j083oBU9ou0crLndpqSoLzoDyT4gfkA1ADH7q/7WXq5SXWDs5apzDIA0TSscQ4kjVjI3ADcE4/xvnb5UVHaW9tko7U6nmDtEjo8uDiHbPccAD3V92ps9zpbjTdobYx00wa3vmNaXEEDSHaeSC3AK0eamBBr7BeuztL/M6W7SSmI6pWjI24yQSQ4b75UjtDf6ir7K2y4Usz6aY1YD+5eW+INfkY6jI4Kj3TtJd+0VK63UtqdAJMCZwJdtnjJADR559vfl/tM1J2VoaWGOSZzakOeI2EkHRJk4xsMnG/8AlCe53+gBeO1BuPZuNsU76WuZUM71kUhYXDQ/cY6ce2ylXm+VlDabdTUb3Gsq4we8Jy5owAMZ6k539FBvXZout0Fbbond82CP4mmAJdnQMuaOc+Y+vmFOvljrqu0W6too3GppIw10Q+bGA4YHmDnbrnbdNVL+Cwbh7KXSVwn/AJxUCo/MW6z9n6s+fTC1kbXsYGyFxcBvr59MrBXm91t0twttRanMl7xr3uAdkludtBbtz5rW2FjobRRxPjMb2wRNcxzcEEMbsQnjIr4WYeRtnZdLQRqafcJtHG0h2o7N65QQOQfKfdJKn3aSAcZXFOFDpK5lASuEpYApYopgBKxrwDkZRxNYzAja1vsE3lGHYb6oaDR7VnblOeHHjAd77qKHY3RB/qlg9JevUMO39EbXBrcN2UQPyn4hq3d8oUtAh4NBAc8ZAOd0zK8vcd/uVyebJAbsAmC9CkGwzqzuQ7HGrfCGQSPH5fPjqhMi4ZccJuNDcIMz5YB/TiB/Vp2PvjhPUleABFUCKMnYZdscopXa2lpGcrMXEyU82CzUxrgdJOyypVDLWM2EjIy0aJIyDjDe95z0wm2RbARNhwRthyp7TdKWV7GGMamAeLUctxkD/wAitJTimexpijDCAcFp4ycnb3yrmxOSL8PP+URj2KE0VQ7lzfupchliO7AW/qBQCqd+kfdaayGkDT0UzWEEs580lJgqC5h8I580lO0HhVErmUBK5lWIMHJx5rrnboQcAuQalQDupEHJjUn6eJ0x8m9Sk/AH4GGV3k0clHPUD+nGcMH7pqepa1vdw7Dg+qi6klO+sbY+56HWmi9DrVYSPFyEu2ymi/ZRJfGS5+/kEqfUanSRLXU8X9SZgx6qoutVTVUeuF2Xt9eQoFc6F41M652PIKpZCWv52yubk5HXhtMJE5kpzlhxqIz6rQWq8PZhjnLO04zupLm4Ac3kLJFs9Boq4TNAO4P7o54RgviHu3/4sdaa15wD0WtoqjvGhbTTRk5Cpj4D7pKW2GJ2SGcnoElp3RHUoCVwuQFy4NytRDridAQZ3VnBAx0W/kmZG01OdUnid0CXYeDUFM54D3+FnqjqasY7uHZvmo1RVvl2HhZ0AUfUqUt+sQ9qS1JnUlqVYId1LmpBqQ6k8AdJzsPqo1wIZA7BGByQeETahonEbtvVRL9TNFOZ2TdzgYefNq5retmsrDNmCqqJZHRRPMerOrG3rumHsDJRE9wJJ3AKV0vklQ1sFJG5lLGNLAOvqVVRGR04cA4k5GBycjC5a++Gq+el61+h5HQKSx/2QUdouVU0OZRzAEfM9ukfvhWsHZq5BuHMjB/4gTSYNoYt5xLgLYWpru7B9FS0XZqsZKHySRNaPUlailhbTxBmrJ8yMLSU0QyXADo+qSUJGk7jlJBJky5c1IXHdCSuzDImxVrmNICjyzGU5JTBK5lNSh6OZSLk1qSLlRI7qXMprUlqTwB3UlqTWpLKYAVnhHffoGSo01yguFC6LPzjSpcrBNE6N3DhhVFtsZpqsyySDumk6Ix/lcvJFdvDWaSXpX0dBjUzAJzgArU2V1ttbHMia102fHIec+Q8gqysiNNUtlbwTuq640FTLI6ooHlxcPGwFYZ1L+munvMQ4k34USO/gP0l6w4p7mX/AIkEgPqpUNruDjkxuHqThDth1Nm7tJG0cglNO7T+RH1VAyx1JaNb2g++UM9mnjZqBD/Ypd2GI1lD2h72Jzv97H7BJZy000kcDw8EHXx9Akp7MMLouQl6Au3Qkr0jnHC5DqTZcuak0gHNSWpNZXMp4A7qS1JrUuavVMQ7qRApgFGCmA8CjBTIK6HJAdqYhPE5pG+Fk6mO4UU2uKciPPBBK1wKCSESbh2D5Ln5eHt6jSbwrLVeJXjTUx7f7TYftyr2N7ZWBw3BVXJbGPZ+GdDs5yNlPpY+4hbFqL8D5ip44rcpDql9Q9pwh0tI2OCjzsgLMHU37KeTha+Dml+R2lgaWuJ6uXU9SO/DOx+ZJc+F6VBKBxSSXpYcxwlDldSVJCOLhXUlWAASllJJPEM6EYSSRgkFlECkklg2ECjCSSMEEEYJSSUDCyiBSSRgybRn8M/3JJJKGkUf/9k="><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="vật lý đại cương A1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGtfQpZRUeNohcfYxpzn2rIowMXlLTVoYFA&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="đại số tuyến tính" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS52_u-pafHytm8SubqkLwsiDOj2NF_3BUxcMVj43VjsPER78p-bzfhwCdevK1VfR2tJvNC6_cK6naopf2611qyKMFSHIV16aid1pK3vyud4lZacnqO8GQegA&usqp=CAc"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="đại số tuyến tính - hình học giải tích" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSjQPUOXp8lSIWDq4WGvKu6jn-k_Zfrr4IF27LYZLZv034n3iR0BMJkeMJxhA9h7b0mClZhvWXTKwN6qqB6czbo4yXXsxkuAcXIx7VMXRm6ywStkvBPu78Pz81sYxc3EPlbhNFvr4A&usqp=CAc"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="xác suất thống kê" src="data:image/avif;base64,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"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="xác xuất thống kê" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS6zEjJrBLrarDCTds1T-GagsTVEsj-S_HvOpK-35rPaHHNE6trovozCemP-GpEHI7YEjQPtzx4Uy4CPby2DddUixMnZxX8hZONa-2z3fBLVyHqzWTI7TOqeBQveEhUa-uN8UZJ&usqp=CAc"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="bài tập toán cao cấp" src="https://shop.ueh.edu.vn/ueh-book/wp-content/uploads/2022/07/BT-TOAN-MAT-TRUOC.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="bài giảng toán học cao cấp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3YJLjwCQHKllwJPrIznwPUwczFU7iRmqSEw&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="giải tích 12" src="https://salt.tikicdn.com/ts/product/dc/a2/1f/727a30bb761b16300ae578b0f8e3e47b.png"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="hóa học đại cương" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTbUNgeFjLAbEmJrbTPl_5t9Xt1Ju-JcXtMw&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="sức bền vật liệu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLDsHLQB2QvT2hbQj92tg7Bglu84MQp8D8Kw&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Xã Hội & Đời Sống</h2>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <img title="sương mù nơi rừng rậm" src="https://marketplace.canva.com/EAD47iMryaU/1/0/1024w/canva-%C4%91%C6%A1n-s%E1%BA%AFc-gi%E1%BA%ADt-g%C3%A2n-khu-r%E1%BB%ABng-b%C3%ACa-s%C3%A1ch-b%E1%BA%B1ng-%E1%BA%A3nh-A31uilHaB7k.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="neil gaiman jerry pratehett" src="https://preview.redd.it/fav-book-cover-v0-gyji4t5cinnb1.jpg?width=640&crop=smart&auto=webp&s=4fd3048fd987dbc7d22761e228f0fb4715a0664b"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="sắp ra mắt" src="https://template.canva.com/EAD0Fi2EteY/1/0/251w-V4kgi8O4Vtc.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="trời xanh" src="https://marketplace.canva.com/EAGZ0CIkt6c/1/0/1024w/canva-tr%E1%BA%AFng-xanh-%C4%91%C6%A1n-gi%E1%BA%A3n-h%C3%ACnh-%E1%BA%A3nh-b%E1%BA%A7u-tr%E1%BB%9Di-b%C3%ACa-s%C3%A1ch-ebook-wattpad-cover-CXjNcgE6K7Y.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="bản sắc văn hóa vùng miền" src="https://book365.vn/upload/thu_vien_anh/ban-sac-van-hoa-vung.png"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="offline" src="https://bloganchoi.com/wp-content/uploads/2022/03/offline-giai-phong-tam-tri-ban-khoi-dien-thoai-thong-minh-va-mang-xa-hoi-2.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="tiếng kêu thiên nga" src="https://i.pinimg.com/474x/57/70/55/5770553158ceac5870925fd79f9699eb.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="dế mèn phiêu lưu ký" src="https://thanhnien.mediacdn.vn/Uploaded/minhnguyet/2022_05_08/bia-sach2-9886.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="không gia đình" src="https://listsach.com/wp-content/uploads/2020/05/quyen-sach-co-bia-dep-khong-gia-dinh.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="chúa tể chiến thần" src="https://dichthuatcongchung247.com/wp-content/uploads/2022/05/Chua-te-nhung-chiec-nhan-dich-thuat-cong-chung-247.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <h2>Truyện Tranh</h2>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <img title="naruto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI6dpu4cmaccXOFuFD6m8SyAlrHEuAb_QHg&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div title="hellsing" class="card">
+                <img src="https://assets.animemotivation.com/wp-content/uploads/2022/12/word-image-130857-6.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="dragonball" src="https://gamek.mediacdn.vn/133514250583805952/2025/3/24/17427875816961557383002-1742793353950-17427933543011174935800.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="myhero academia" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRZyWD01NluTXzwlWct8dB0kKt6qPxq1IRA&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="naruto" src="https://preview.redd.it/naruto-had-the-best-volume-covers-what-volume-cover-is-v0-xqxo7t9n1hnb1.jpg?width=640&crop=smart&auto=webp&s=dd5db088451c0e4de0c8c70258e2761bb53eaeb4"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="người cưa" src="https://comics.vn/img/news/2024/03/larger/14734-tho-san-quy-chainsaw-man-1.jpg?v=2210"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="man" src="https://assets.animemotivation.com/wp-content/uploads/2022/12/word-image-130857-21.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="conan" src="https://sanphamtot.vn/wp-content/uploads/2024/09/nhung-thiet-ke-an-tuong-trong-bia-truyen-tranh-conan-1.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="bleach" src="https://pibook.vn/upload/products/54293_31_07_20_bleach-tap-30.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="doreamon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlpLc9L6DdBLpa9mune6R5jdg-Erw2Py3-g&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="hunter" src="https://assets.animemotivation.com/wp-content/uploads/2022/12/word-image-130857-17.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="người bánn hạnh phúc" src="https://pos.nvncdn.com/5679e9-27451/art/artCT/20221226_TJM8SDh88UiUJnp1yYYlSvea.png"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="học viện siêu anh hùng" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxS1TYIIA6lSieMq0eKXagP0FN2oSck4Il3Q&s"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="jujusu kasen" src="https://upload.wikimedia.org/wikipedia/vi/8/82/Jujutsu_Kaisen_vol_1_cover.jpeg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+            <div class="card">
+                <img title="bleach" src="https://cdn1.fahasa.com/media/catalog/product/b/l/bleachtap_55.jpg"><br>
+                <button class="borrow">Mượn</button>
+                <button class="return">Trả</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer id="contact">
+        © 2025 Library Management
+        <table cellpadding="10px">
+            <tr id="email">
+                <td><img src="data:image/jpeg;base64,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">Email</td>
+                <td><a href="mailto:maiv09700@gmail.com">maiv09700@gmail.com</a></td>
+            </tr>
+            <tr id="number-phone">
+                <td><img src="data:image/png;base64,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">SDT</td>
+                <td><a href="tel:+0349348526">0349348526</a></td>
+            </tr>
+            <tr id="facebook">
+                <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAACUCAMAAABcK8BVAAAAYFBMVEU7WZj////09fji5e5LZZ45V5fCytwvUJM0VJb3+PscRo+AkrlAXZp1h7IlSpFtga7p7PPX3OhXb6RjeKkLPoust8/L0eCircmYpsWHl7xdc6aPnsC6wtYAN4h8jLVRaqHbWce5AAAB2UlEQVR4nO3ZbW+DIBSGYaplIFXUvqB9mf3//3LZmixutZSGHTjJnvtzP1w5tSBUCIQQQgghhBBCKCYp9WKZVcoqsd7u2mYhIbO5tN3Xm4Pry66oVvcVdSaatHVzKBZE31WZaFYPvc+Vjabq0TuwfDS7ezaxXDQ7Lj31HGhqDIHloJkhTJaepo6BsuQ0fXr+08xEM2WoLDVNNcGyxDRZhw8tMU1twmWpaY4rTcoXZGlp6syWZkJ29Sw0WXdcaboN3glS08K3z/S00HeOWymPLfrin5I7T+08mZDmW3Cr4d2oXEdkKX1rx2TTSRZonr3d7TPKhBSeZW1SOWnCQ6tO+e43vnq84hZbtrTuypZWrkEDDTTQQPsfNOmlJedoM8t6aNLcRzpI3bq3WQ9lq+LH52450km+dDN0F+nzF0UrSL/QKFqp2U7NkR4XomgXvrQDX9rIl3YkvVmIoVUTW1qxY0sjPprG0Eram78YWk+6GUTRHO2FWwztYtjSBr5TO9JeBsbQWtpr5hjalS+Ndu2IotH+QIVuunLWY0dV/o72HffTZue9cg5N/A8H24sF0EADDTTQQAMNNNBAAw000EADDTTQQAMNNNBAAw000EADDTTQQAMNNND+nvYBL7EnD7Gl2HsAAAAASUVORK5CYII=">FB</td>
+                <td><a target="_blank" href="https://www.facebook.com/mai.viet.119866">https://www.facebook.com/mai.viet.119866</a></td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="script-borrow.js"></script>
+</body>
+
+</html>

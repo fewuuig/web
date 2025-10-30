@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    /* nền chung */
+    color: #367fc9;
+}
+
+
+/* Header + Nav */
+
+header {
+    display: flex;
+    background-color: #2C7BE5;
+    /* xanh primary */
+    color: white;
+    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* chú ý */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC107;
+    /* accent vàng */
+}
+
+.qr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.qr div {
+    text-align: center;
+}
+
+img {
+    width: 340px;
+}
+
+
+/* Footer */
+
+footer {
+    background: linear-gradient(to bottom, rgb(71, 71, 224), #5790d5);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    clear: both;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#email img {
+    width: 12px;
+    height: 12px;
+}
+
+#email a {
+    color: aqua;
+}
+
+#number-phone img {
+    width: 12px;
+    height: 12px;
+}
+
+#number-phone a {
+    color: aqua;
+}
+
+#facebook img {
+    width: 12px;
+    height: 12px;
+}
+
+#facebook a {
+    color: aqua;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .intro {
+        flex-direction: column;
+    }
+    .intro-text {
+        padding: 20px;
+    }
+}
